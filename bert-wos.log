@@ -1,0 +1,285 @@
+2022/05/23 12:35:39 - INFO : Building Vocabulary....
+2022/05/23 12:35:39 - INFO : Loading Vocabulary from Cached Dictionary...
+2022/05/23 12:35:39 - INFO : Vocabulary of token 50002
+2022/05/23 12:35:39 - INFO : Vocabulary of label 141
+2022/05/23 12:35:41 - INFO : loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-vocab.txt from cache at /home/chb/.cache/torch/transformers/5e8a2b4893d13790ed4150ca1906be5f7a03d6c4ddf62296c383f6db42814db2.e13dbb970cb325137104fb2e5f36fe865f27746c6b526f6352861b1980eb80b1
+2022/05/23 12:35:44 - INFO : loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-config.json from cache at /home/chb/.cache/torch/transformers/b945b69218e98b3e2c95acf911789741307dec43c698d35fad11c1ae28bda352.9da767be51e1327499df13488672789394e2ca38b877837e52618a67d7002391
+2022/05/23 12:35:44 - INFO : Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+2022/05/23 12:35:44 - INFO : loading weights file https://cdn.huggingface.co/bert-base-cased-pytorch_model.bin from cache at /home/chb/.cache/torch/transformers/d8f11f061e407be64c4d5d7867ee61d1465263e24085cfa26abf183fdc830569.3fadbea36527ae472139fe84cddaa65454d7429f12d543d80bfc3ad70de55ac2
+2022/05/23 12:35:45 - INFO : All model checkpoint weights were used when initializing BertModel.
+
+2022/05/23 12:35:45 - INFO : All the weights of BertModel were initialized from the model checkpoint at bert-base-cased.
+If your task is similar to the task the model of the ckeckpoint was trained on, you can already use BertModel for predictions without further training.
+2022/05/23 12:35:45 - INFO : ========== epoch: 0 ==========
+2022/05/23 12:35:45 - INFO : begin evaluation after epoch: 10
+2022/05/23 13:23:11 - INFO : loss: 0.166557
+2022/05/23 14:28:13 - INFO : loss: 0.098319
+2022/05/23 15:41:28 - INFO : loss: 0.033734
+2022/05/23 16:53:45 - INFO : loss: 0.022901
+2022/05/23 17:50:07 - INFO : loss: 0.016171
+2022/05/23 18:56:34 - INFO : loss: 0.012686
+2022/05/23 19:50:59 - INFO : loss: 0.010791
+2022/05/23 20:36:31 - INFO : loss: 0.009320
+2022/05/23 21:10:47 - INFO : loss: 0.008084
+2022/05/23 21:47:24 - INFO : loss: 0.007013
+2022/05/23 21:47:24 - INFO : ========== epoch: 10 ==========
+2022/05/23 22:02:16 - INFO : DEV Improve Micro-F1 -0.01% --> 0.8617902471609886%
+2022/05/23 22:02:16 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/23 22:05:14 - INFO : DEV Improve Macro-F1 -0.01% --> 0.7968889802784936%
+2022/05/23 22:05:14 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/23 22:08:19 - INFO : TEST Improve Macro-F1 -0.01% --> 0.7968889802784936%
+2022/05/23 22:08:19 - INFO : TEST Improve Micro-F1 -0.01% --> 0.8521590240248275%
+2022/05/23 22:30:30 - INFO : loss: 0.006165
+2022/05/23 23:07:10 - INFO : loss: 0.005359
+2022/05/23 23:41:32 - INFO : loss: 0.004696
+2022/05/24 00:18:24 - INFO : loss: 0.004198
+2022/05/24 00:56:40 - INFO : loss: 0.003811
+2022/05/24 01:35:09 - INFO : loss: 0.003286
+2022/05/24 02:04:10 - INFO : DEV Improve Micro-F1 0.8617902471609886% --> 0.8622136387852958%
+2022/05/24 02:04:10 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/24 02:07:21 - INFO : TEST Improve Micro-F1 0.8521590240248275% --> 0.8536097859979214%
+2022/05/24 02:07:21 - INFO : DEV Improve Macro-F1 0.7968889802784936% --> 0.7984386526453395%
+2022/05/24 02:07:21 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/24 02:17:20 - INFO : loss: 0.002838
+2022/05/24 02:55:24 - INFO : loss: 0.002410
+2022/05/24 03:32:46 - INFO : loss: 0.001943
+2022/05/24 04:10:08 - INFO : loss: 0.001859
+2022/05/24 04:10:08 - INFO : ========== epoch: 20 ==========
+2022/05/24 04:45:04 - INFO : loss: 0.001523
+2022/05/24 04:47:55 - INFO : DEV Improve Macro-F1 0.7984386526453395% --> 0.7993146770443076%
+2022/05/24 04:47:55 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/24 04:50:58 - INFO : DEV Improve Macro-F1 0.7993146770443076% --> 0.7993536117929204%
+2022/05/24 04:50:58 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/24 04:54:08 - INFO : TEST Improve Macro-F1 0.7968889802784936% --> 0.7993536117929204%
+2022/05/24 05:28:39 - INFO : loss: 0.001409
+2022/05/24 06:05:48 - INFO : loss: 0.001240
+2022/05/24 06:40:47 - INFO : DEV Improve Macro-F1 0.7993536117929204% --> 0.7996543572788939%
+2022/05/24 06:40:47 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/24 06:45:20 - INFO : loss: 0.001147
+2022/05/24 06:53:22 - INFO : DEV Improve Micro-F1 0.8622136387852958% --> 0.8631628155469482%
+2022/05/24 06:53:22 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/24 06:56:17 - INFO : TEST Improve Micro-F1 0.8536097859979214% --> 0.8552596466883706%
+2022/05/24 07:22:36 - INFO : loss: 0.001046
+2022/05/24 07:59:13 - INFO : loss: 0.000966
+2022/05/24 08:35:48 - INFO : loss: 0.000859
+2022/05/24 09:12:19 - INFO : loss: 0.000810
+2022/05/24 09:47:53 - INFO : loss: 0.000801
+2022/05/24 10:21:22 - INFO : loss: 0.000812
+2022/05/24 10:21:22 - INFO : ========== epoch: 30 ==========
+2022/05/24 10:35:02 - INFO : DEV Improve Micro-F1 0.8631628155469482% --> 0.8633817842378985%
+2022/05/24 10:35:02 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/24 10:38:09 - INFO : TEST Improve Micro-F1 0.8552596466883706% --> 0.8600362434708453%
+2022/05/24 10:38:09 - INFO : DEV Improve Macro-F1 0.7996543572788939% --> 0.8003979882630327%
+2022/05/24 10:38:09 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/24 10:41:18 - INFO : TEST Improve Macro-F1 0.7993536117929204% --> 0.7995573921249121%
+2022/05/24 11:04:55 - INFO : loss: 0.000732
+2022/05/24 11:40:21 - INFO : DEV Improve Micro-F1 0.8633817842378985% --> 0.8658642594450018%
+2022/05/24 11:40:21 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/24 11:43:29 - INFO : DEV Improve Macro-F1 0.8003979882630327% --> 0.8040755873733071%
+2022/05/24 11:43:29 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/24 11:48:45 - INFO : loss: 0.000639
+2022/05/24 12:26:21 - INFO : loss: 0.000711
+2022/05/24 13:01:32 - INFO : loss: 0.000646
+2022/05/24 13:39:06 - INFO : loss: 0.000616
+2022/05/24 14:16:37 - INFO : loss: 0.000603
+2022/05/24 14:53:33 - INFO : loss: 0.000532
+2022/05/24 15:28:32 - INFO : loss: 0.000552
+2022/05/24 16:06:21 - INFO : loss: 0.000506
+2022/05/24 16:43:56 - INFO : loss: 0.000493
+2022/05/24 16:43:56 - INFO : ========== epoch: 40 ==========
+2022/05/24 16:51:05 - INFO : DEV Improve Micro-F1 0.8658642594450018% --> 0.8661275230584146%
+2022/05/24 16:51:05 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/24 16:54:11 - INFO : DEV Improve Macro-F1 0.8040755873733071% --> 0.8073445292477686%
+2022/05/24 16:54:11 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/24 16:57:21 - INFO : TEST Improve Macro-F1 0.7995573921249121% --> 0.8073445292477686%
+2022/05/24 16:57:21 - INFO : TEST Improve Micro-F1 0.8600362434708453% --> 0.8623617323298604%
+2022/05/24 17:27:47 - INFO : loss: 0.000503
+2022/05/24 18:02:58 - INFO : loss: 0.000504
+2022/05/24 18:40:33 - INFO : loss: 0.000430
+2022/05/24 18:45:40 - INFO : DEV Improve Micro-F1 0.8661275230584146% --> 0.8685821319864869%
+2022/05/24 18:45:40 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/24 19:21:04 - INFO : loss: 0.000400
+2022/05/24 19:58:02 - INFO : loss: 0.000431
+2022/05/24 20:32:39 - INFO : loss: 0.000363
+2022/05/24 21:09:56 - INFO : loss: 0.000432
+2022/05/24 21:47:35 - INFO : loss: 0.000348
+2022/05/24 22:25:10 - INFO : loss: 0.000422
+2022/05/24 23:00:21 - INFO : loss: 0.000355
+2022/05/24 23:00:21 - INFO : ========== epoch: 50 ==========
+2022/05/24 23:37:08 - INFO : loss: 0.000363
+2022/05/25 00:13:42 - INFO : loss: 0.000420
+2022/05/25 00:49:48 - INFO : loss: 0.000351
+2022/05/25 01:23:12 - INFO : loss: 0.000380
+2022/05/25 01:58:43 - INFO : loss: 0.000338
+2022/05/25 02:34:16 - INFO : loss: 0.000281
+2022/05/25 03:09:46 - INFO : loss: 0.000244
+2022/05/25 03:26:33 - INFO : DEV Improve Micro-F1 0.8685821319864869% --> 0.8690264894008907%
+2022/05/25 03:26:33 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/25 03:48:09 - INFO : loss: 0.000276
+2022/05/25 04:21:32 - INFO : loss: 0.000252
+2022/05/25 04:57:07 - INFO : loss: 0.000292
+2022/05/25 04:57:07 - INFO : ========== epoch: 60 ==========
+2022/05/25 05:32:39 - INFO : loss: 0.000302
+2022/05/25 06:08:13 - INFO : loss: 0.000231
+2022/05/25 06:41:38 - INFO : loss: 0.000309
+2022/05/25 07:17:11 - INFO : loss: 0.000230
+2022/05/25 07:52:47 - INFO : loss: 0.000277
+2022/05/25 08:18:25 - INFO : DEV Improve Macro-F1 0.8073445292477686% --> 0.8081223331566696%
+2022/05/25 08:18:25 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/25 08:31:10 - INFO : loss: 0.000210
+2022/05/25 08:39:49 - INFO : DEV Improve Macro-F1 0.8081223331566696% --> 0.8086584725068997%
+2022/05/25 08:39:49 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/25 08:42:33 - INFO : TEST Improve Macro-F1 0.8073445292477686% --> 0.8078668407831652%
+2022/05/25 09:01:11 - INFO : DEV Improve Macro-F1 0.8086584725068997% --> 0.8099953915802816%
+2022/05/25 09:01:11 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/25 09:10:05 - INFO : loss: 0.000266
+2022/05/25 09:45:40 - INFO : loss: 0.000214
+2022/05/25 10:21:14 - INFO : loss: 0.000251
+2022/05/25 10:56:49 - INFO : loss: 0.000214
+2022/05/25 10:56:49 - INFO : ========== epoch: 70 ==========
+2022/05/25 11:30:12 - INFO : loss: 0.000212
+2022/05/25 12:05:43 - INFO : loss: 0.000174
+2022/05/25 12:41:15 - INFO : loss: 0.000223
+2022/05/25 13:16:47 - INFO : loss: 0.000188
+2022/05/25 13:50:11 - INFO : loss: 0.000201
+2022/05/25 14:25:46 - INFO : loss: 0.000204
+2022/05/25 15:01:19 - INFO : loss: 0.000174
+2022/05/25 15:36:59 - INFO : loss: 0.000176
+2022/05/25 15:54:14 - INFO : DEV Improve Micro-F1 0.8690264894008907% --> 0.8706040268456375%
+2022/05/25 15:54:14 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/25 16:13:20 - INFO : loss: 0.000147
+2022/05/25 16:49:01 - INFO : loss: 0.000190
+2022/05/25 16:49:01 - INFO : ========== epoch: 80 ==========
+2022/05/25 17:24:45 - INFO : loss: 0.000191
+2022/05/25 18:00:20 - INFO : loss: 0.000154
+2022/05/25 18:33:47 - INFO : loss: 0.000192
+2022/05/25 19:09:18 - INFO : loss: 0.000177
+2022/05/25 19:44:56 - INFO : loss: 0.000124
+2022/05/25 20:20:29 - INFO : loss: 0.000174
+2022/05/25 20:56:10 - INFO : loss: 0.000126
+2022/05/25 21:29:48 - INFO : loss: 0.000095
+2022/05/25 22:05:28 - INFO : loss: 0.000072
+2022/05/25 22:38:48 - INFO : DEV Improve Micro-F1 0.8706040268456375% --> 0.871937713940533%
+2022/05/25 22:38:48 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/25 22:41:34 - INFO : DEV Improve Macro-F1 0.8099953915802816% --> 0.8115351948177753%
+2022/05/25 22:41:34 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/25 22:44:24 - INFO : TEST Improve Macro-F1 0.8078668407831652% --> 0.8115351948177753%
+2022/05/25 22:44:24 - INFO : TEST Improve Micro-F1 0.8623617323298604% --> 0.8664035017052015%
+2022/05/25 22:44:24 - INFO : DEV Improve Macro-F1 0.8115351948177753% --> 0.811583341578921%
+2022/05/25 22:44:24 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/25 22:49:26 - INFO : loss: 0.000139
+2022/05/25 22:49:26 - INFO : ========== epoch: 90 ==========
+2022/05/25 23:24:59 - INFO : loss: 0.000113
+2022/05/25 23:58:23 - INFO : loss: 0.000141
+2022/05/26 00:34:02 - INFO : loss: 0.000082
+2022/05/26 01:09:33 - INFO : loss: 0.000090
+2022/05/26 01:45:07 - INFO : loss: 0.000113
+2022/05/26 02:18:30 - INFO : loss: 0.000094
+2022/05/26 02:54:03 - INFO : loss: 0.000068
+2022/05/26 03:29:38 - INFO : loss: 0.000089
+2022/05/26 04:05:10 - INFO : loss: 0.000095
+2022/05/26 04:38:34 - INFO : loss: 0.000125
+2022/05/26 04:38:35 - INFO : ========== epoch: 100 ==========
+2022/05/26 05:14:04 - INFO : loss: 0.000029
+2022/05/26 05:49:36 - INFO : loss: 0.000077
+2022/05/26 06:25:10 - INFO : loss: 0.000057
+2022/05/26 06:58:33 - INFO : loss: 0.000085
+2022/05/26 07:19:48 - INFO : DEV Improve Micro-F1 0.871937713940533% --> 0.8727272727272727%
+2022/05/26 07:19:48 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/26 07:36:52 - INFO : loss: 0.000061
+2022/05/26 08:09:08 - INFO : DEV Improve Micro-F1 0.8727272727272727% --> 0.8727808668855095%
+2022/05/26 08:09:08 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/26 08:15:07 - INFO : loss: 0.000083
+2022/05/26 08:50:40 - INFO : loss: 0.000041
+2022/05/26 09:07:47 - INFO : DEV Improve Micro-F1 0.8727808668855095% --> 0.8738378922638026%
+2022/05/26 09:07:47 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/26 09:10:33 - INFO : DEV Improve Macro-F1 0.811583341578921% --> 0.8117167267173299%
+2022/05/26 09:10:33 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/26 09:29:44 - INFO : loss: 0.000051
+2022/05/26 10:05:29 - INFO : loss: 0.000054
+2022/05/26 10:37:35 - INFO : DEV Improve Macro-F1 0.8117167267173299% --> 0.811902074372488%
+2022/05/26 10:37:35 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/26 10:43:53 - INFO : loss: 0.000059
+2022/05/26 10:43:53 - INFO : ========== epoch: 110 ==========
+2022/05/26 10:49:43 - INFO : DEV Improve Macro-F1 0.811902074372488% --> 0.8120070918394684%
+2022/05/26 10:49:43 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/26 11:22:22 - INFO : loss: 0.000027
+2022/05/26 11:58:28 - INFO : loss: 0.000050
+2022/05/26 12:17:25 - INFO : DEV Improve Macro-F1 0.8120070918394684% --> 0.8121502639766672%
+2022/05/26 12:17:25 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/26 12:29:51 - INFO : DEV Improve Macro-F1 0.8121502639766672% --> 0.812422116373327%
+2022/05/26 12:29:51 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/26 12:38:22 - INFO : loss: 0.000055
+2022/05/26 13:14:30 - INFO : loss: 0.000051
+2022/05/26 13:50:09 - INFO : loss: 0.000036
+2022/05/26 14:06:45 - INFO : DEV Improve Micro-F1 0.8738378922638026% --> 0.8741659681475272%
+2022/05/26 14:06:45 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/26 14:09:32 - INFO : DEV Improve Macro-F1 0.812422116373327% --> 0.815931019845284%
+2022/05/26 14:09:32 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/26 14:21:40 - INFO : DEV Improve Macro-F1 0.815931019845284% --> 0.8160199994126304%
+2022/05/26 14:21:40 - INFO : Achieve best Macro-F1 on dev set, evaluate on test set
+2022/05/26 14:34:06 - INFO : loss: 0.000027
+2022/05/26 15:07:35 - INFO : loss: 0.000067
+2022/05/26 15:43:10 - INFO : loss: 0.000031
+2022/05/26 16:18:52 - INFO : loss: 0.000026
+2022/05/26 16:54:28 - INFO : loss: 0.000048
+2022/05/26 16:54:28 - INFO : ========== epoch: 120 ==========
+2022/05/26 17:27:52 - INFO : loss: 0.000035
+2022/05/26 18:03:26 - INFO : loss: 0.000011
+2022/05/26 18:39:00 - INFO : loss: 0.000007
+2022/05/26 19:14:32 - INFO : loss: 0.000010
+2022/05/26 19:48:00 - INFO : loss: 0.000028
+2022/05/26 20:23:33 - INFO : loss: 0.000017
+2022/05/26 20:59:10 - INFO : loss: 0.000021
+2022/05/26 21:34:48 - INFO : loss: 0.000003
+2022/05/26 22:08:12 - INFO : loss: 0.000008
+2022/05/26 22:43:51 - INFO : loss: 0.000014
+2022/05/26 22:43:51 - INFO : ========== epoch: 130 ==========
+2022/05/26 23:19:25 - INFO : loss: 0.000003
+2022/05/26 23:55:00 - INFO : loss: 0.000012
+2022/05/27 00:28:26 - INFO : loss: 0.000007
+2022/05/27 01:04:00 - INFO : loss: 0.000001
+2022/05/27 01:39:37 - INFO : loss: 0.000000
+2022/05/27 02:15:12 - INFO : loss: 0.000005
+2022/05/27 02:48:41 - INFO : loss: 0.000012
+2022/05/27 03:24:16 - INFO : loss: 0.000001
+2022/05/27 03:59:52 - INFO : loss: 0.000009
+2022/05/27 04:35:28 - INFO : loss: 0.000001
+2022/05/27 04:35:29 - INFO : ========== epoch: 140 ==========
+2022/05/27 05:11:04 - INFO : loss: 0.000000
+2022/05/27 05:44:33 - INFO : loss: 0.000006
+2022/05/27 06:20:07 - INFO : loss: 0.000000
+2022/05/27 06:34:55 - INFO : DEV Improve Micro-F1 0.8741659681475272% --> 0.8742543065889135%
+2022/05/27 06:34:55 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/27 06:37:41 - INFO : TEST Improve Micro-F1 0.8664035017052015% --> 0.8680709831107304%
+2022/05/27 06:56:21 - INFO : DEV Improve Micro-F1 0.8742543065889135% --> 0.8752595967039593%
+2022/05/27 06:56:21 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/27 07:01:16 - INFO : loss: 0.000001
+2022/05/27 07:08:30 - INFO : DEV Improve Micro-F1 0.8752595967039593% --> 0.875527567495143%
+2022/05/27 07:08:30 - INFO : Achieve best Micro-F1 on dev set, evaluate on test set
+2022/05/27 07:39:39 - INFO : loss: 0.000001
+2022/05/27 08:13:13 - INFO : loss: 0.000001
+2022/05/27 08:49:01 - INFO : loss: 0.000018
+2022/05/27 09:25:03 - INFO : loss: 0.000000
+2022/05/27 10:00:56 - INFO : loss: 0.000000
+2022/05/27 10:34:30 - INFO : loss: 0.000000
